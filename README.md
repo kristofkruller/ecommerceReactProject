@@ -5,8 +5,11 @@ commercejs API provides products, fetching images trough, a lot of calls and fun
 
 For styling I used @material-ui. 
 
-The focus on
+# Focus
 for Cart:
-- Add
-- Multiply 
-- Remove 
+- Add items
+- Multiply, counter 
+- Remove items, Empty cart, Checkout 
+- Fully functional Card layout
+- Fetch (and display) items from an API
+- Responsivity
