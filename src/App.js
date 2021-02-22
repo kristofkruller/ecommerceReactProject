@@ -57,11 +57,16 @@ const App = () => {
         <div>
             <Navbar totalItems={cart.total_items} />
             <Switch>
-                <Route exact="/">
+                <Route exact path="/">
                     <Products products={products} onAddToCart={handleAddToCart} />
                 </Route>
-                <Route exact="/cart">
-                    <Cart cart={cart} />
+                <Route exact path="/cart">
+                    <Cart 
+                        cart={cart}
+                        handleUpdateCartQty={handleUpdateCartQty}
+                        handleRemoveFromCart={handleRemoveFromCart}
+                        handleEmptyCart={handleEmptyCart}
+                    />
                 </Route>
             </Switch>            
         </div>
